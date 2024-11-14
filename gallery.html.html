@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Gallery</h1>
+        <input type="text" id="searchInput" placeholder="Search Images...">
+        <button id="themeToggle" class="toggle-button">Dark Mode</button>
+    </div>
+
+    <div class="gallery-container">
+        <!-- Repeat this gallery-item block for each image -->
+        <div class="gallery-item" data-title="Sun">
+            <img src="images/sun.png" alt="Stars" class="gallery-image">
+            
+        
+        </div>
+            <div class="gallery-item" data-title="Mountain View">
+                <img src="images/pexels-photo-147640.jpeg" alt="Mountain View" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Ocean Waves">
+                <img src="images/pexels-photo-225203.jpeg" alt="Ocean Waves" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Sunset Landscape">
+                <img src="images/pexels-photo-226424.jpeg" alt="Sunset Landscape" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Forest Path">
+                <img src="images/pexels-photo-237321.jpeg" alt="Forest Path" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Waterfall in Nature">
+                <img src="images/pexels-photo-415580.webp" alt="Waterfall in Nature" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Lake View">
+                <img src="images/pexels-photo-459203.jpeg" alt="Lake View" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Mountain Peak">
+                <img src="images/pexels-photo-547494.jpeg" alt="Mountain Peak" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Autumn Woods">
+                <img src="images/pexels-photo-709552.jpeg" alt="Autumn Woods" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Winter Landscape">
+                <img src="images/pexels-photo-7018886.jpeg" alt="Winter Landscape" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Pixabay Landscape 1">
+                <img src="images/pexels-pixabay-158028.jpg" alt="Pixabay Landscape 1" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Pixabay Landscape 2">
+                <img src="images/pexels-pixabay-158063.jpg" alt="Pixabay Landscape 2" class="gallery-image">
+            </div>
+            <div class="gallery-item" data-title="Redwood National Park">
+                <img src="images/redwood-national-park-california-hdr-landscape-163585.jpeg" alt="Redwood National Park" class="gallery-image">
+            </div>
+        </div>
+        
+ 
+<!-- Modal for Large Image View -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <div class="main-image-container">
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <div id="imageCaption" class="caption"></div>
+        </div>
+        <div class="thumbnail-sidebar">
+            <!-- Thumbnails will be generated dynamically here -->
+        </div>
+    </div>
+</div>
